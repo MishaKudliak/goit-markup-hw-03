@@ -30,6 +30,14 @@ body {
   color: var(--secondary-dark-txt);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* сброс отступов (заголовки + текст + списки) */
 
 h1,
@@ -159,11 +167,16 @@ p {
 
 .header-contact:not(:last-child) {
   margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
+  margin-bottom: 94px;
+
 }
 
 .header-contacts {
@@ -295,7 +308,7 @@ border-radius: 0px 0px 4px 4px;
   margin-bottom: 50px;
 }
 
-/* описание карточек */
+/* описание карточек главная страница */
 .card-descript {
   font-size: 16px;
   line-height: 1.18px;
@@ -303,6 +316,11 @@ border-radius: 0px 0px 4px 4px;
   color: var(--secondary-dark-txt);
   text-align: center;
   margin-bottom: 30px;
+
+  /* .card-descript {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em; */
 }
 
 /* footer */
@@ -372,13 +390,9 @@ border-radius: 0px 0px 4px 4px;
 /* оформление кнопок навигации страница portfolio  */
 
 .nav-button {
-  background: #f5f4fa;
-  font-weight: 500;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+background: #F5F4FA;
+border-radius: 4px;
+padding: 6px 22px;
 }
 
 .nav-button:hover,
@@ -390,6 +404,22 @@ border-radius: 0px 0px 4px 4px;
   border-radius: 4px;
 }
 
+.btn-items:not(:last-child) {
+  margin-right: 8px;
+}
+
+.nav-btns-list {
+  display: flex;
+  justify-content: center;
+}
+
+.main-btn {
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
+
+/* оформление основной галереи страница portfolio  */
+
 .project-item-title {
   font-weight: 700;
   font-size: 18px;
@@ -398,16 +428,23 @@ border-radius: 0px 0px 4px 4px;
   color: var(--dark-txt-clr);
 }
 
-.card-descript {
+.card-descript-portfolio {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.18px;
   letter-spacing: 0.03em;
+  color: var(--secondary-dark-txt);
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+.project-item:nth-child(3n) {
+margin-right: 0;
+}
+
+.project-item {
+margin-right: 30px;
+margin-bottom: 30px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
 }

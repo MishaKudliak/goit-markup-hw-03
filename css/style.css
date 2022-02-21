@@ -144,7 +144,7 @@ p {
 /* ссылки контакты в header */
 .header {
   padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
 }
 
 .header-mail,
@@ -174,9 +174,8 @@ p {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
   margin-bottom: 94px;
-
 }
 
 .header-contacts {
@@ -190,7 +189,7 @@ p {
 
 .page-nav-item:not(:last-child) {
   margin-right: 50px;
-} 
+}
 
 .hero {
   background-color: #2f303a;
@@ -208,8 +207,6 @@ p {
 
   padding-top: 200px;
   margin-bottom: 30px;
-
-
 }
 
 /* кнопка hero */
@@ -246,7 +243,7 @@ p {
 }
 
 .benefits-item:not(:last-child) {
-margin-right: 30px;
+  margin-right: 30px;
 }
 
 .benefits-item-title {
@@ -269,14 +266,14 @@ margin-right: 30px;
   height: 75px;
 }
 
-.examples-list  {
+.examples-list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 94px;
 }
 
 .team {
-  background-color: #F5F4FA;;
+  background-color: #f5f4fa;
 }
 
 .team-list {
@@ -287,8 +284,9 @@ margin-right: 30px;
 
 .team-list-item {
   justify-content: space-between;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -385,14 +383,12 @@ border-radius: 0px 0px 4px 4px;
   color: var(--link-active-clr);
 }
 
-
-
 /* оформление кнопок навигации страница portfolio  */
 
 .nav-button {
-background: #F5F4FA;
-border-radius: 4px;
-padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .nav-button:hover,
@@ -420,12 +416,20 @@ padding: 6px 22px;
 
 /* оформление основной галереи страница portfolio  */
 
+.project-item {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+
 .project-item-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--dark-txt-clr);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 4px;
 }
 
 .card-descript-portfolio {
@@ -433,18 +437,14 @@ padding: 6px 22px;
   line-height: 1.18px;
   letter-spacing: 0.03em;
   color: var(--secondary-dark-txt);
-}
-
-.project-item:nth-child(3n) {
-margin-right: 0;
-}
-
-.project-item {
-margin-right: 30px;
-margin-bottom: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 94px;
 }
